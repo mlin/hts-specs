@@ -54,7 +54,7 @@ show-styles:
 
 mostlyclean:
 	-rm -f new/*.aux new/*.log new/*.out new/*.toc new/*.ver
-	-rm -f diff/*.idx diff/*.out diff/*.tex diff/*.toc
+	-rm -f diff/*.idx diff/**.aux diff/*.log diff/*.out diff/*.tex diff/*.toc
 
 clean: mostlyclean
 	-rm -f $(PDFS:%=new/%)$(if $(wildcard new),; rmdir new)
